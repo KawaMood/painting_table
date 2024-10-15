@@ -33,7 +33,7 @@ In this example below, I set a [a cake player head texture](https://minecraft-he
 
 You can find many players heads textures on the [minecraft-heads.com](https://minecraft-heads.com/) website. In the "Custom Heads" section, search for a head you like, and click on it to open its relative full page. Then, scroll to the `For developers` > `Value` field, and click the `Copy` button. Paste the result in your writable book in the game.
 
-I recommend you to watch the tutorial for more direct explanation and examples. [Incoming]
+I recommend you to watch the [tutorial video](https://youtu.be/UMGJ37vp6tw) for more direct explanation and examples.
 
 ## Misc. information about painting tables
 
