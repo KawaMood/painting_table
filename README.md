@@ -35,13 +35,13 @@ You can find many players heads textures on the [minecraft-heads.com](https://mi
 
 I recommend you to watch the tutorial for more direct explanation and examples. [Incoming]
 
-## Misc. information about racks
+## Misc. information about painting tables
 
 - **Painting tables** can be oriented depending on the player's facing direction. As the block uses display entities, I don't recommend to spam it so much. But you can use a few of them as decoration if you wish.
 - Like for other crafting station, painting tables return input items the player set in it when it closes it.
 - For technical reasons, you can't put a hopper, dropper, crafter adjenctly to a painting table, or a hopper minecart below it. These blocks will also be rotated automatically to not face it.
 
-# 🧰 Other Commands
+# 🧰 Other commands
 
 <details>
 <summary>Give yourself a painting table</summary>
