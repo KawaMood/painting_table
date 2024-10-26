@@ -2,12 +2,8 @@
     "type": "minecraft:crafting_shaped",
     "pattern": ["BB", "PP"],
     "key": {
-        "B": {
-            "item": "minecraft:brush"
-        },
-        "P": {
-            "tag": "minecraft:planks"
-        }
+        "B": "minecraft:brush",
+        "P": "#minecraft:planks"
     },
     "result": {
         "id": "minecraft:player_head",
