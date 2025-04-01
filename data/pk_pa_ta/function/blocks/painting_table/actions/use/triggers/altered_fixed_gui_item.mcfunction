@@ -5,7 +5,7 @@
 # @context the user at the used painting table
 
 # Logs
-execute if score $pk.pa_ta.logs pk.value matches 1 run tellraw @a[tag=pk.dev] {"text":"Altered GUI of painting table","color":"gray"}
+execute if score $pk.pa_ta.logs pk.value matches 1 run tellraw @a[tag=pk.dev] {text:"Altered GUI of painting table",color:"gray"}
 
 # Check if the player swapped the GUI item with another item and give it back if it is the case
 data modify storage pk:common temp.retained_items set from block ~ ~ ~ Items

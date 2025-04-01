@@ -19,4 +19,4 @@ function pk_pa_ta:blocks/painting_table/blocks/create
 execute align xyz run kill @e[type=interaction,tag=pk.pa_ta.block.painting_table.lock,predicate=pk_pa_ta:scores/custom_block/component_id_match,limit=1,dx=0]
 
 # Logs
-execute if score $pk.pa_ta.logs pk.value matches 1 run tellraw @a[tag=pk.dev] {"text":"Stop using painting table","color":"gray"}
+execute if score $pk.pa_ta.logs pk.value matches 1 run tellraw @a[tag=pk.dev] {text:"Stop using painting table",color:"gray"}

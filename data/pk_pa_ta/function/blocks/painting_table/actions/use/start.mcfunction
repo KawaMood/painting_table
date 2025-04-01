@@ -17,4 +17,4 @@ function pk_pa_ta:blocks/painting_table/entities/lock/create/_run
 data modify block ~ ~ ~ Items set from storage pk:pa_ta database.globals.painting_table_gui
 
 # Logs
-execute if score $pk.pa_ta.logs pk.value matches 1 run tellraw @a[tag=pk.dev] {"text":"Start using painting table","color":"gray"}
+execute if score $pk.pa_ta.logs pk.value matches 1 run tellraw @a[tag=pk.dev] {text:"Start using painting table",color:"gray"}

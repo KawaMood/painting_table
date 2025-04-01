@@ -3,7 +3,7 @@
 # @context the user at the used painting table
 
 # Logs
-execute if score $pk.pa_ta.logs pk.value matches 1 run tellraw @a[tag=pk.dev] {"text":"Dropped output from painting table","color":"gray"}
+execute if score $pk.pa_ta.logs pk.value matches 1 run tellraw @a[tag=pk.dev] {text:"Dropped output from painting table",color:"gray"}
 
 # Set score
 execute at @s anchored eyes positioned ^ ^ ^ store result score $crafted_output_count pk.temp if entity @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{pk_data:{output:1b,from:"painting_table"}}}}},distance=..2]

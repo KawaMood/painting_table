@@ -56,4 +56,4 @@ function pk_pa_ta:_main/update/_run
 # ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― 
 # Logs
 # ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
-execute unless score $logs.load pk.value matches ..0 run tellraw @a [{"text": "Loaded ","color": "yellow"},{"text":"KawaMood's ","color": "aqua", "bold": true},{"nbt":"installed_datapacks[{id:\"painting_table\"}].name", "storage": "pk:common","color": "aqua", "bold": true},{"text": " (V.","color": "aqua"},{"nbt":"installed_datapacks[{id:\"painting_table\"}].version", "storage": "pk:common","color": "aqua"},{"text": ")","color": "aqua"},{"text": " successfully"}]
+execute unless score $logs.load pk.value matches ..0 run tellraw @a [{text: "Loaded ",color: "yellow"},{text:"KawaMood's ",color: "aqua", bold: true},{nbt:"installed_datapacks[{id:\"painting_table\"}].name", storage: "pk:common",color: "aqua", bold: true},{text: " (V.",color: "aqua"},{nbt:"installed_datapacks[{id:\"painting_table\"}].version", storage: "pk:common",color: "aqua"},{text: ")",color: "aqua"},{text: " successfully"}]

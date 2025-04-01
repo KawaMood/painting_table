@@ -1,7 +1,7 @@
 #> pk_pa_ta:_main/update/from_v2/painting_tables/5
 
 # Logs
-tellraw @a[tag=pk.update_from_v2,limit=1] [{"text": "Updated \"painting table\" at [","color": "gray"},{"nbt":"update.new_entry.location.x","storage":"pk:common"},{"text": ","},{"nbt":"update.new_entry.location.y","storage":"pk:common"},{"text": ","},{"nbt":"update.new_entry.location.z","storage":"pk:common"},{"text": "] in "},{"nbt":"update.new_entry.location.dimension","storage":"pk:common"}]
+tellraw @a[tag=pk.update_from_v2,limit=1] [{text: "Updated \"painting table\" at [",color: "gray"},{nbt:"update.new_entry.location.x",storage:"pk:common"},{text: ","},{nbt:"update.new_entry.location.y",storage:"pk:common"},{text: ","},{nbt:"update.new_entry.location.z",storage:"pk:common"},{text: "] in "},{nbt:"update.new_entry.location.dimension",storage:"pk:common"}]
 
 # Replace entities and block
 execute store result score $temp pk.custom_block.component.id run data get storage pk:common update.new_entry.id

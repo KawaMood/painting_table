@@ -3,7 +3,7 @@
 # @context the user at the used painting table
 
 # Logs
-execute if score $pk.pa_ta.logs pk.value matches 1 run tellraw @a[tag=pk.dev] {"text":"Took/splited output from painting table","color":"gray"}
+execute if score $pk.pa_ta.logs pk.value matches 1 run tellraw @a[tag=pk.dev] {text:"Took/splited output from painting table",color:"gray"}
 
 # Set score
 execute store result score $crafted_output_count pk.temp run clear @s *[custom_data~{pk_data:{output:1b,from:"painting_table"}}] 0

@@ -8,7 +8,7 @@
 # @context a custom block's controller at @s
 
 # Logs
-$execute if score $pk.pa_ta.logs pk.value matches 1 run tellraw @a[tag=pk.dev] {"text":"Updated light to $(move_to_direction)","color":"gray"}
+$execute if score $pk.pa_ta.logs pk.value matches 1 run tellraw @a[tag=pk.dev] {text:"Updated light to $(move_to_direction)",color:"gray"}
 
 # Mark controller
 $tag @s add pk.custom_block.light.$(move_to_direction)

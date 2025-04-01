@@ -3,7 +3,7 @@
 # @context as the user at the used painting table
 
 # Logs
-execute if score $pk.pa_ta.logs pk.value matches 1 run tellraw @a[tag=pk.dev] {"text":"Give back inputs","color":"gray"}
+execute if score $pk.pa_ta.logs pk.value matches 1 run tellraw @a[tag=pk.dev] {text:"Give back inputs",color:"gray"}
 
 data modify storage pk:common temp.destructive_items set value []
 data modify storage pk:common temp.destructive_items append from block ~ ~ ~ Items[{Slot:10b}]

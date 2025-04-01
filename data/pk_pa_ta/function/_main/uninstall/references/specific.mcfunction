@@ -6,3 +6,4 @@ scoreboard objectives remove pk.pa_ta.gametime
 # Clear storage
 data remove storage pk:pa_ta database
 data remove storage pk:pa_ta settings
+data remove storage pk:common installed_datapacks[{id:"painting_table"}]
