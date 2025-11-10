@@ -8,7 +8,7 @@
 # ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
 # Check if the player clicked or dropped GUI item
 execute store result score $gui_items.total pk.temp run clear @a[tag=pk.current.player,limit=1] *[custom_data~{pk_data:{gui:1b,from:"painting_table"}}]
-execute as @a[tag=pk.current.player,limit=1] anchored eyes positioned ^ ^ ^ store result score $gui_items.dropped pk.temp run kill @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{pk_data:{gui:1b,from:"painting_table"}}}}},distance=..2]
+execute as @a[tag=pk.current.player,limit=1] at @s anchored eyes positioned ^ ^ ^ store result score $gui_items.dropped pk.temp run kill @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{pk_data:{gui:1b,from:"painting_table"}}}}},distance=..2]
 scoreboard players operation $gui_items.total pk.temp += $gui_items.dropped pk.temp
 execute if score $gui_items.total pk.temp matches 1.. as @a[tag=pk.current.player,limit=1] run function pk_pa_ta:blocks/painting_table/actions/use/triggers/altered_fixed_gui_item
 

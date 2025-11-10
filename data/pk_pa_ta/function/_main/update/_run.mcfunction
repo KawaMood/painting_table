@@ -9,5 +9,5 @@
 #       version: string
 #           The data pack's current literal version
 
-scoreboard players set $pk.pa_ta.version pk.value 30004
-data modify storage pk:common installed_datapacks[{id:"painting_table"}].version set value "3.0.4"
+scoreboard players set $pk.pa_ta.version pk.value 30005
+data modify storage pk:common installed_datapacks[{id:"painting_table"}].version set value "3.0.5"
