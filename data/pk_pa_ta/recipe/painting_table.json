@@ -1,6 +1,9 @@
 {
   "type": "minecraft:crafting_shaped",
-  "pattern": ["BB", "PP"],
+  "pattern": [
+    "BB",
+    "PP"
+  ],
   "key": {
     "B": "minecraft:brush",
     "P": "#minecraft:planks"
@@ -8,8 +11,18 @@
   "result": {
     "id": "minecraft:player_head",
     "components": {
-      "minecraft:custom_model_data": { "strings": ["pk_pa_ta:painting_table"] },
-      "minecraft:lore": [{ "color": "dark_gray", "italic": false, "text": "Painting Table" }],
+      "minecraft:custom_model_data": {
+        "strings": [
+          "pk_pa_ta:painting_table"
+        ]
+      },
+      "minecraft:lore": [
+        {
+          "color": "dark_gray",
+          "italic": false,
+          "text": "Painting Table"
+        }
+      ],
       "minecraft:item_name": {
         "color": "yellow",
         "italic": false,
