@@ -42,6 +42,16 @@ scoreboard objectives add pk.pa_ta.gametime dummy
 function pk_pa_ta:globals/painting_table_gui/define
 
 # ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― 
+# Settings
+# ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+
+# Get server info
+function pk_pa_ta:packages/get_server_info/run
+
+# Open container delay
+execute if score $packages.get_server_info.paper pk.temp matches 1 unless data storage pk:pa_ta settings.open_container_delay run data modify storage pk:pa_ta settings.open_container_delay set value 2
+
+# ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― 
 # Schedule
 # ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
 # Painting tables body light update

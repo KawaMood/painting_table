@@ -1,0 +1,1 @@
+data remove storage pk:pa_ta settings.paper_open_container_delay

@@ -17,6 +17,6 @@
     }
   },
   "rewards": {
-    "function": "pk_pa_ta:events/player/any_block_use/painting_table"
+    "function": "pk_pa_ta:events/player/any_block_use/painting_table/start"
   }
 }

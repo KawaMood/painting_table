@@ -1,9 +1,3 @@
-#> pk_pa_ta:events/player/any_block_use/painting_table
-#
-# @within advancement pk_pa_ta:events/any_block_use/painting_table
-
-advancement revoke @s only pk_pa_ta:events/any_block_use/painting_table
-
 # Increment and set interaction.id score
 scoreboard players add $next pk.custom_block.interaction.id 1
 scoreboard players operation @s pk.custom_block.interaction.id = $next pk.custom_block.interaction.id
