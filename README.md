@@ -35,7 +35,9 @@ In this example below, I set a [a cake player head texture](https://minecraft-he
 
 You can find many players heads textures on the [minecraft-heads.com](https://minecraft-heads.com/) website. In the "Custom Heads" section, search for a head you like, and click on it to open its relative full page. Then, scroll to the `For developers` > `Value` field, and click the `Copy` button. Paste the result in your writable book in the game.
 
-I recommend you to watch the [tutorial video](https://youtu.be/UMGJ37vp6tw) for more direct explanation and examples.
+If you're using Fabric, you may also be interested in the client-side [Head Browser](https://modrinth.com/mod/headbrowser) mod created by [TheVoidBlock](https://modrinth.com/user/TheVoidBlock) in order to get player heads value.
+
+I recommend you to watch the tutorial for more direct explanation and examples. [Incoming]
 
 ## Misc. information about painting tables
 
@@ -43,7 +45,51 @@ I recommend you to watch the [tutorial video](https://youtu.be/UMGJ37vp6tw) for 
 - Like for other crafting station, painting tables return input items the player set in it when it closes it.
 - For technical reasons, you can't put a hopper, dropper, crafter adjenctly to a painting table, or a hopper minecart below it. These blocks will also be rotated automatically to not face it.
 
-# 🧰 Other commands
+# ⚙️Settings
+
+<details>
+<summary>Tick GUI items clear (security for non-vanilla servers)</summary>
+
+External versions such as Paper sometimes involve weird behavior with containers.
+In order to avoid potential items dupe issues with them, you can tick the system that kill items entities players may have managed to drop from a painting table's GUI using this setting.
+
+You can **enable**, **disable** or **get** the current state of this setting using these following commands respectively:
+
+```
+/function pk_pa_ta:settings/tick_clear_gui_items/true
+/function pk_pa_ta:settings/tick_clear_gui_items/false
+/function pk_pa_ta:settings/tick_clear_gui_items/get
+```
+
+</details>
+<details>
+<summary>Open Container Delay (compatibility for Paper)</summary>
+
+This setting allows you to adjust the minimal delay before a waystone trigger its "open" event when opened. This has been introduced to bypass [issue #13839](https://github.com/PaperMC/Paper/issues/13839) on Paper since its 26.1.2 build #17 version.
+
+By default, a value of `2` ticks is set if it detects a Paper server.
+
+You can **set** a delay (in ticks) with the following command:
+
+```
+/function pk_pa_ta:settings/open_container_delay/set {value:<value>}
+```
+
+_Example - Set a delay of 2 ticks:_
+
+```
+/function pk_pa_ta:settings/open_container_delay/set {value:2}
+```
+
+Or **get** the current delay using the following command:
+
+```
+/function pk_pa_ta:settings/open_container_delay/get
+```
+
+</details>
+
+# 🧰 Other Commands
 
 <details>
 <summary>Give yourself a painting table</summary>
@@ -69,7 +115,7 @@ It may take some time for it to complete, so be sure to get the message telling 
 
 # 🔧 Update from V.2
 
-The data pack provides a process to convert all existing painting tables from **V.2** to **V.3**.  
+The data pack provides a process to convert all existing racks from **V.2** to **V.3**.  
 In order to do so, follow the steps written below. _I would also advice you to create a backup of your world using V.2, in case another data pack / plugin / mod accidentally breaks the updating process._
 
 1. Remove the Painting Table V.2 data pack from the `/datapacks/` folder of your world, **don't** uninstall V.2 upstream with the uninstall function, as you should keep its database.
