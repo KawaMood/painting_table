@@ -23,7 +23,7 @@
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-              "type": "minecraft:villager",
+              "minecraft:entity_type": "minecraft:villager",
               "nbt": "{Tags:[\"pk.pa_ta.villager.ignore\"]}"
             }
           }
