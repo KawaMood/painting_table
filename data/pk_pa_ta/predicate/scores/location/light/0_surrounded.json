@@ -1,8 +1,8 @@
 {
-  "condition": "minecraft:all_of",
+  "type": "minecraft:all_of",
   "terms": [
     {
-      "condition": "minecraft:location_check",
+      "type": "minecraft:location_check",
       "offsetX": -1,
       "predicate": {
         "light": {
@@ -11,7 +11,7 @@
       }
     },
     {
-      "condition": "minecraft:location_check",
+      "type": "minecraft:location_check",
       "offsetX": 1,
       "predicate": {
         "light": {
@@ -20,7 +20,7 @@
       }
     },
     {
-      "condition": "minecraft:location_check",
+      "type": "minecraft:location_check",
       "offsetY": -1,
       "predicate": {
         "light": {
@@ -29,7 +29,7 @@
       }
     },
     {
-      "condition": "minecraft:location_check",
+      "type": "minecraft:location_check",
       "offsetY": 1,
       "predicate": {
         "light": {
@@ -38,7 +38,7 @@
       }
     },
     {
-      "condition": "minecraft:location_check",
+      "type": "minecraft:location_check",
       "offsetZ": -1,
       "predicate": {
         "light": {
@@ -47,7 +47,7 @@
       }
     },
     {
-      "condition": "minecraft:location_check",
+      "type": "minecraft:location_check",
       "offsetZ": 1,
       "predicate": {
         "light": {

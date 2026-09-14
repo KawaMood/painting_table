@@ -6,7 +6,7 @@
 # Try to clean up item from the passed slot, and stop the process if found
 
 # @return try to clean up item
-$execute if items entity @s container.$(slot) *[custom_data~{pk_data:{output:1b,from:"painting_table"}}] run return run item modify entity @s container.$(slot) [{function:"minecraft:set_components","components":{"!minecraft:custom_data":{}}}]
+$execute if items entity @s container.$(slot) *[custom_data~{pk_data:{output:1b,from:"painting_table"}}] run return run item modify entity @s container.$(slot) [{type:"minecraft:set_components","components":{"!minecraft:custom_data":{}}}]
 
 # Recursive call
 scoreboard players add $slot pk.temp 1

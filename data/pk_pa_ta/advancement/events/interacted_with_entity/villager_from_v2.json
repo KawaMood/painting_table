@@ -3,31 +3,27 @@
     "requirement": {
       "trigger": "minecraft:player_interacted_with_entity",
       "conditions": {
-        "player": [
-          {
-            "condition": "minecraft:value_check",
-            "value": {
-              "type": "minecraft:score",
-              "target": {
-                "type": "minecraft:fixed",
-                "name": "$pk.pa_ta.settings.track_villagers_from_v2"
-              },
-              "score": "pk.value",
-              "scale": 1
+        "player": {
+          "type": "minecraft:int_value_check",
+          "value": {
+            "type": "minecraft:score",
+            "target": {
+              "type": "minecraft:fixed",
+              "name": "$pk.pa_ta.settings.track_villagers_from_v2"
             },
-            "range": 1
+            "score": "pk.value",
+            "scale": 1
+          },
+          "test": 1
+        },
+        "entity": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:entity_type": "minecraft:villager",
+            "nbt": "{Tags:[\"pk.pa_ta.villager.ignore\"]}"
           }
-        ],
-        "entity": [
-          {
-            "condition": "minecraft:entity_properties",
-            "entity": "this",
-            "predicate": {
-              "minecraft:entity_type": "minecraft:villager",
-              "nbt": "{Tags:[\"pk.pa_ta.villager.ignore\"]}"
-            }
-          }
-        ]
+        }
       }
     }
   },
