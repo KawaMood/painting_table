@@ -4,6 +4,9 @@
 #
 # @context player who placed the placeholder of the custom block, at the placeholder
 
+#   If the block isn't replaceable
+execute unless block ~ ~ ~ #replaceable run return run function pk_pa_ta:blocks/painting_table/actions/create/cancel
+
 # Create data
 #   Set painting_table data in: storage pk:common output.painting_table
 function pk_pa_ta:blocks/painting_table/data/create/_run
